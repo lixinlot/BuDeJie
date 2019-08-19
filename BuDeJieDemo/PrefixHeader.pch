@@ -1,0 +1,100 @@
+//
+//  PrefixHeader.pch
+//  BuDeJieDemo
+//
+//  Created by jimmy on 2018/4/18.
+//  Copyright © 2018年 jimmy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//头文件
+#import "BuDeJieTabBarController.h"
+#import "EssenceViewController.h"
+#import "NewViewController.h"
+#import "PublishViewController.h"
+#import "FriendTrendsViewController.h"
+#import "MeViewController.h"
+#import "BuDeJieTabBar.h"
+#import "CustomNavController.h"
+#import "SettingViewController.h"
+#import "AddFriendViewController.h"
+#import "ReconmmandViewController.h"
+#import "AdViewController.h"
+#import "AFNetworkTool.h"
+#import "AdItem.h"
+#import "ReconmmandItem.h"
+#import "ReconmmandTableViewCell.h"
+#import "LoginViewController.h"
+#import "LoginRegisterView.h"
+#import "FastLoginView.h"
+#import "FastButton.h"
+#import "LoginField.h"
+#import "objc/message.h"
+#import "SquareCell.h"
+#import "SquareItem.h"
+#import "WebViewController.h"
+#import "VedioViewController.h"
+
+
+#import <WebKit/WebKit.h>
+#import <Photos/Photos.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MediaPlayer/MediaPlayer.h>
+
+
+
+#import "AllTableViewCell.h"
+#import "VedioTableViewCell.h"
+#import "SoundTableViewCell.h"
+#import "PictureTableViewCell.h"
+#import "TextTableViewCell.h"
+#import "AllView.h"
+#import "Const.h"
+#import "IntValueChange.h"
+#import "SeeBigPictureViewController.h"
+#import "TextModel.h"
+
+
+
+//类扩展
+#import "UIImage+NotRenderImage.h"
+#import "UIView+FramView.h"
+#import "UIBarButtonItem+BarItem.h"
+#import "UITextField+Placeholder.h"
+#import "HMSegmentedControl+SegmentControl.h"
+#import "UIScrollView+ScrollView.h"
+
+
+
+
+//第三方
+#import "AFNetworking.h"
+#import "YYModel.h"
+#import "YYWebImage.h"
+#import <YYWebImage/YYWebImage.h>
+#import "MJExtension.h"
+#import "SVProgressHUD.h"
+#import "YYImageCache.h"
+//#import "SDWebImage.h"
+#import "MJRefresh.h"
+
+#import "SDCycleScrollView.h"
+#import "HMSegmentedControl.h"
+#import "YYText.h"
+
+
+
+//宏
+#import "FrameHeader.h"
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

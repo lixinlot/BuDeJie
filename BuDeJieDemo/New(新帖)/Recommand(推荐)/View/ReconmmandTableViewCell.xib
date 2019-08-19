@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecCell" id="KGk-i7-Jjw" customClass="ReconmmandTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wup-62-utn">
+                        <rect key="frame" x="10" y="10.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="kI4-6U-nG8"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="ynd-VW-mba"/>
+                            <constraint firstAttribute="height" constant="60" id="ypC-Fs-aOS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lo5-cA-udr">
+                        <rect key="frame" x="103" y="11" width="130" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVA-WL-KMv">
+                        <rect key="frame" x="103" y="48" width="130" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ow1-d7-WMJ">
+                        <rect key="frame" x="255" y="30" width="55" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="3Dh-ys-XFs"/>
+                            <constraint firstAttribute="height" constant="20" id="3kM-Yq-h5G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="+ 订阅">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ow1-d7-WMJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="5og-YJ-emq"/>
+                    <constraint firstAttribute="bottom" secondItem="Wup-62-utn" secondAttribute="bottom" constant="10" id="DeV-Q9-RKU"/>
+                    <constraint firstAttribute="bottom" secondItem="Wup-62-utn" secondAttribute="bottom" constant="10" id="Gdr-Y4-aes"/>
+                    <constraint firstItem="Wup-62-utn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TIS-HN-uDf"/>
+                    <constraint firstItem="Wup-62-utn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="bT2-wL-dQi"/>
+                    <constraint firstAttribute="trailing" secondItem="ow1-d7-WMJ" secondAttribute="trailing" constant="10" id="c2X-Ka-vS4"/>
+                    <constraint firstItem="Wup-62-utn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gK9-Qu-r12"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="iconView" destination="Wup-62-utn" id="mJw-jZ-C0n"/>
+                <outlet property="nameView" destination="Lo5-cA-udr" id="3CD-rq-wh0"/>
+                <outlet property="numView" destination="DVA-WL-KMv" id="kJ7-Pv-qhn"/>
+                <outlet property="subBtn" destination="ow1-d7-WMJ" id="b9Q-f1-PSh"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
